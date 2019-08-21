@@ -1,0 +1,28 @@
+<h1>Add</h1>
+
+
+<%= simple_form_for(@flat) do |f| %>
+  <% if @flat.errors.any? %>
+    <div class="alert alert-danger">
+      <h3>Please fix these problems:</h3>
+      <ul>
+      <% @flat.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form_inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.input :img_url %>
+  </div>
+
+  <div class="form_actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+

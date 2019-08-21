@@ -1,0 +1,16 @@
+<h1>Edit</h1>
+
+<%= simple_form_for(@flat) do |f| %>
+
+  <div class="form_inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    <%= f.input :img_url %>
+  </div>
+
+  <div class="form_actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

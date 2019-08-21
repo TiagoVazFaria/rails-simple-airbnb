@@ -1,0 +1,41 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+#address{
+  font-size: 12px;
+}
+
+#price_guests{
+  font-size: 15px;
+}
+
+.banner-image {
+    height: 350px;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+
+.card-img-top{
+  height: 10rem;
+  object-fit: cover;
+}
+
+.image{
+    width: 35rem;
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+}

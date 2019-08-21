@@ -4,12 +4,25 @@
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar justify-content-between navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/flats">My flats🏠</a>
+    ​
+      <div id="navbarSupportedContent">
+        <div class="ml-auto flex">
+          <a class="btn btn-outline-primary my-2 my-sm-0 ml-2" href="/flats/new">Add Flat</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
